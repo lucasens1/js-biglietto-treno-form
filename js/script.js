@@ -39,6 +39,8 @@ sendBtnElement = sendBtnElement.addEventListener("click", function(){
     userSurname = userArr[1];
     console.log(userSurname);
 
+    document.getElementById("user-NameSur").innerHTML = `${userName} ${userSurname}`
+
     //Prendo il valore dei Km
     userKm = document.getElementById("number");
     userKm = userKm.value; //string
@@ -55,13 +57,16 @@ sendBtnElement = sendBtnElement.addEventListener("click", function(){
     if( userAge === 'underage') {
         costoTot = userKm * costoKm;
         let scontoTot = costoTot * scontoMin;
-        costoTot = costoTot - scontoTot;   
+        costoTot = costoTot - scontoTot;
+        document.getElementById("user-Cost").innerHTML = `${costoTot.toFixed(2)}`;
     } else if( userAge === 'over') {
         costoTot = userKm * costoKm;
         let scontoTot = costoTot * scontoAnz;
         costoTot = costoTot - scontoTot;
+        document.getElementById("user-Cost").innerHTML = `${costoTot.toFixed(2)}`;
     } else if( userAge === 'adult'){
         costoTot = userKm * costoKm;
+        document.getElementById("user-Cost").innerHTML = `${costoTot.toFixed(2)}`;
     } else {
         alert('Seleziona la tua età ! Non fare il furbo. ');
     }
