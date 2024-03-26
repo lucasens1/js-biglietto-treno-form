@@ -12,10 +12,17 @@
     display: flex;
     padding: 30px;
     flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
 }
 
-.col-50{
-    width: 50%;
+.col-30{
+    width: 30%;
+    padding: 10px;
+}
+
+.col-30 button {
+    padding: 7px 14px;
 }
 
 .col-20{

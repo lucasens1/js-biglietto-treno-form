@@ -9,26 +9,78 @@
 </head>
 <body>
     <div class="container">
-        <div class="centered">
-
-            <div class="col-50">
-                <label for="age">Inserisci la tua età :</label>
-                <input type="text" id="age">
+        <div class="centered" id="form-container">
+            <h1>Calcola il prezzo del tuo biglietto</h1>
+            <div class="col-30">
+                <label for="name-surname">Nome Cognome :</label>
+                <input type="text" id="name-surname">
             </div>
             
-            <div class="col-50">
+            <div class="col-30">
                 <label for="number">Km da percorrere :</label>
                 <input type="text" id="number">
             </div>
 
-            <div class="col-20">
-                <button id="btn-send">Invia</button>
+            <div class="col-30">
+                <label for="age"> Fascia d'età : </label>
+                <select id="age">
+                    <option value="null"></option>
+                    <option value="underage">Minorenne</option>
+                    <option value="adult">Maggiorenne</option>
+                    <option value="over">Over 65</option>
+                </select>
+            </div>
+
+
+            <div class="col-30">
+                <button id="btn-send">Genera</button>
+            </div>
+
+            <div class="col-30">
+                <button id="btn-null">Annulla</button>
+            </div>
+
+            <div id="result"></div>
+
+        </div>
+
+
+        <!-- Biglietto Finale con Dati -->
+        <div class="centered">
+            <h1>Il tuo biglietto : </h1>
+            <div class="col-30">
+                <label for="name-surname">Nome Cognome :</label>
+                <input type="text" id="name-surname">
+            </div>
+            
+            <div class="col-30">
+                <label for="number">Km da percorrere :</label>
+                <input type="text" id="number">
+            </div>
+
+            <div class="col-30">
+                <label for="courses"> Fascia d'età : </label>
+                <select id="courses">
+                    <option value="underage">Minorenne</option>
+                    <option value="adult">Maggiorenne</option>
+                    <option value="over">Over 65</option>
+                </select>
+            </div>
+
+
+            <div class="col-30">
+                <button id="btn-send">Genera</button>
+            </div>
+
+            <div class="col-30">
+                <button id="btn-null">Annulla</button>
             </div>
 
             <div id="result"></div>
 
         </div>
     </div>
+
     
 
     <script src="./js/script.js"></script>
