@@ -12,6 +12,14 @@ body{
     font-size: 13px;
 }
 
+.txt-wt{
+    color: white;
+}
+
+.txt-cr{
+    color: crimson;
+}
+
 .d-flex{
     display: flex;
     justify-content: space-evenly;
@@ -58,6 +66,10 @@ body{
     padding: 10px;
     width: 20%;
     align-self: center;
+}
+
+.col-100{
+    width: 100%;
 }
 
 .container{

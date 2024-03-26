@@ -11,20 +11,20 @@
     <div class="container">
 
         <!-- Calcolo prezzo Biglietto-->
-        <h1 class="txt-center mrg-b-10">CALCOLA IL PREZZO DEL TUO BIGLIETTO : </h1>
+        <h1 class="txt-center mrg-b-10 txt-wt">CALCOLA IL PREZZO DEL TUO BIGLIETTO : </h1>
         <div class="centered mrg-b-10 d-flex" id="form-container">
-            <div class="col-30">
-                <label for="name-surname">Nome Cognome :</label>
+            <div class="col-30 txt-center">
+                <label for="name-surname" class="txt-cr">Nome Cognome :</label>
                 <input type="text" id="name-surname">
             </div>
             
-            <div class="col-30">
-                <label for="number">Km da percorrere :</label>
+            <div class="col-30 txt-center">
+                <label for="number" class="txt-cr">Km da percorrere :</label>
                 <input type="text" id="number">
             </div>
 
-            <div class="col-30">
-                <label for="age"> Fascia d'età : </label>
+            <div class="col-30 txt-center">
+                <label for="age" class="txt-cr"> Fascia d'età : </label>
                 <select id="age">
                     <option value="null"></option>
                     <option value="underage">Minorenne</option>
@@ -34,12 +34,9 @@
             </div>
 
 
-            <div class="col-30">
-                <button id="btn-send">Genera</button>
-            </div>
-
-            <div class="col-30">
-                <button id="btn-null">Annulla</button>
+            <div class="col-100 txt-center">
+                <button id="btn-send" class="txt-cr">Genera</button>
+                <button id="btn-null" class="txt-cr">Annulla</button>
             </div>
 
             <div id="result"></div>
@@ -48,7 +45,7 @@
 
 
         <!-- Biglietto Finale con Dati -->
-        <h1 class="txt-center mrg-b-10">IL TUO BIGLIETTO : </h1>
+        <h1 class="txt-center mrg-b-10 txt-wt">IL TUO BIGLIETTO : </h1>
         <div class="centered">
            
             <h4>Dettaglio Passeggeri</h4>
