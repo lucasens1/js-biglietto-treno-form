@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.centered{
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 60%;
+    background-color: cadetblue;
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.col-50{
+    width: 50%;
+}
+
+.col-20{
+    padding-top: 20px;
+    width: 20%;
+}
+.container{
+    margin-top: 100px;
+}
